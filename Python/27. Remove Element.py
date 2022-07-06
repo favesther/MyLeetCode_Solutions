@@ -5,12 +5,8 @@
 '''
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        go_on = True
         try:
-            while go_on:
-                nums1 = nums.copy()
-                nums.remove(val) 
-                if nums1 == nums:
-                    go_on = False
+            while True:
+                nums.remove(val)
         except:
             pass
